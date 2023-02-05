@@ -1,0 +1,109 @@
+<html>
+    
+<title>Brendan Battisti</title>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="top">
+        <header>
+            <div id="title", class="title">Hi, I'm Brendan</div>
+            <div class="links", id="links">
+                <div>Link1</div>
+                <div>Link2</div>
+                <div>Link3</div>
+            </div>
+        </header>
+        <section>
+            <div class="background", onclick="change()">
+                <img src="img/Night/sky.png">
+                <img src="img/Night/stars.png" id="stars">
+                <img src="img/Night/moon.png" id="moon">
+                <img src="img/Night/back.png" id="back">
+                <img src="img/Night/middle.png" id="middle">
+                <img src="img/Night/Water.png" id="water">
+                <img src="img/Night/front.png" id="front">
+            </div>
+        </section>
+        <section class="about">
+            <div>
+                My name is Brendan Battisti and I'm a second year computer science student
+            </div>
+        </section>
+        
+        <section class="skills">
+            <div>
+                Here are some of the projects I've worked on
+            </div>
+        </section>
+
+        <section class="work">
+            <div>
+                Here are some of the projects I've worked on
+            </div>
+        </section>
+
+        <section class="contact">
+            <div>
+                Check me out!
+                <br>
+                Github
+                <br>
+                LinkedIn
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    // Scrolling System
+    let stars = document.getElementById("stars")
+    let moon = document.getElementById("moon")
+    let back = document.getElementById("back")
+    let middle = document.getElementById("middle")
+    let front = document.getElementById("front")
+    let water = document.getElementById("water")
+
+    window.addEventListener('scroll', function() {
+        let value = window.scrollY;
+        back.style.top = value * -.1 + 'px';
+        middle.style.top = value * -.05 + 'px';
+        stars.style.left = value * -.2 + 'px';
+        stars.style.top = value * .2 + 'px';
+        moon.style.top = value * .5 + 'px'; 
+        water.style.top = value * -.05 + 'px';
+    })
+
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+   }
+
+
+    // Typing name feature
+    let name_doc = document.getElementById("title")
+    async function type() {
+        let name = "Hi, I'm Brendan"
+        var current = ""
+        for (i = 0; i < name.length; i++) {
+            current = current + name[i]
+            name_doc.innerHTML = current;
+            await sleep(50);
+        }
+        
+        await sleep(500)
+        document.getElementById("links").style.visibility = "inherit";
+
+    }
+
+    type()
+
+   
+
+</script>

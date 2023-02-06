@@ -113,7 +113,7 @@ header div {
     top: 0;
     left: 0;
     width: 100vw;
-
+    vertical-align:middle;
     height: 100%;
     object-fit: cover;
 }
@@ -165,3 +165,7 @@ header div {
     
   }
   
+  .social_links img {
+    width: 15%;
+    height: auto;
+  }

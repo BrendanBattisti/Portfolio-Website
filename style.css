@@ -1,9 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0;
     background-color: #25239f;
     height: auto;
     overflow-x: hidden;
+
 }
 
 section {
@@ -65,8 +70,11 @@ header div {
 
 }
 
-.links div {
+.links a {
     margin-right: 10%;
+
+}
+.links div {
     display: inline-block;
     position: relative;
     visibility: hidden;
@@ -113,7 +121,7 @@ header div {
     top: 0;
     left: 0;
     width: 100vw;
-    vertical-align:middle;
+    vertical-align;
     height: 100%;
     object-fit: cover;
 }

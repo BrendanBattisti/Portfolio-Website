@@ -11,9 +11,10 @@
         <header>
             <div id="title", class="title">Hi, I'm Brendan</div>
             <div class="links", id="links">
-                <div>Link1</div>
-                <div>Link2</div>
-                <div>Link3</div>
+                <div id="about_link">About</div>
+                <div id="skills_link">Skils</div>
+                <div id="work_link">Work</div>
+                <div id="contact_link">Contact</div>
             </div>
         </header>
         <section>
@@ -27,25 +28,25 @@
                 <img src="img/Night/front.png" id="front">
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div>
                 My name is Brendan Battisti and I'm a second year computer science student
             </div>
         </section>
         
-        <section class="skills">
+        <section class="skills" id="skills">
             <div>
                 Here are some of the projects I've worked on
             </div>
         </section>
 
-        <section class="work">
+        <section class="work" id="work">
             <div>
                 Here are some of the projects I've worked on
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div>
                 Check me out!
                 <br>
@@ -97,8 +98,24 @@
             await sleep(50);
         }
         
-        await sleep(500)
-        document.getElementById("links").style.visibility = "inherit";
+        await sleep(300)
+
+        let links_delay = 170
+
+        document.getElementById("about_link").classList.add("displayed")
+
+        await sleep(links_delay)
+        document.getElementById("skills_link").classList.add("displayed")
+
+        await sleep(links_delay)
+        document.getElementById("work_link").classList.add("displayed")
+
+        await sleep(links_delay)
+        document.getElementById("contact_link").classList.add("displayed")
+
+        await sleep(links_delay)
+        
+        //document.getElementById("links").style.visibility = "inherit";
 
     }
 

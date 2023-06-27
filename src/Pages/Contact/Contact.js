@@ -18,7 +18,17 @@ export default function Contact() {
   });
 
   const messageStyle = {
-    opacity: (-1 / 500) * (scroll - 700),
+    opacity: (-1 / 200) * (scroll - 300),
+  };
+
+  const githubStyle = {
+    opacity: (-1 / 200) * (scroll - 200),
+    left: Math.min(-0.5 * Math.max(scroll, 0), 0),
+  };
+
+  const linkedInStlye = {
+    opacity: (-1 / 200) * (scroll - 200),
+    right: Math.min(-0.5 * Math.max(scroll, 0), 0),
   };
 
   const content = (
@@ -28,12 +38,17 @@ export default function Contact() {
       </div>
 
       <div className={styles.row}>
-        <a href="https://github.com/BrendanBattisti" target="_blank">
+        <a
+          href="https://github.com/BrendanBattisti"
+          target="_blank"
+          style={githubStyle}
+        >
           <img src={github} />
         </a>
         <a
           href="https://www.linkedin.com/in/brendan-battisti-0a548785/"
           target="_blank"
+          style={linkedInStlye}
         >
           <img src={linkedIn} />
         </a>

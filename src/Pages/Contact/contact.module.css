@@ -1,5 +1,9 @@
 img {
-  height: 30vh;
+  height: 20vh;
+}
+
+a {
+  position: relative;
 }
 
 .container {
@@ -11,6 +15,8 @@ img {
 }
 
 .row {
+  margin-top: 5%;
+  padding-top: 6%;
   height: 50%;
   justify-content: space-evenly;
   display: flex;

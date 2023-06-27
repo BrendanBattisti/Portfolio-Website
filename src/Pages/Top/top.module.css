@@ -17,6 +17,7 @@ header {
   font-size: 30px;
   display: inline-block;
   position: relative;
+  cursor: default;
 }
 
 .title:after {

@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "./background.module.css";
 
 export default function Background() {
-  const [time, setTime] = useState(0);
   const [scroll, setScroll] = useState(0);
   const images = require.context("../../img/Night", true);
   const imagesOrder = [
@@ -77,7 +76,10 @@ export default function Background() {
   ]);
 
   window.addEventListener("scroll", function () {
-    setScroll(window.scrollY);
+    const pos = window.scrollY;
+    if (pos < 300) {
+      setScroll(window.scrollY);
+    }
   });
 
   function Image(image, index) {

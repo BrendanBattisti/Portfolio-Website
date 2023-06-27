@@ -14,6 +14,6 @@ export default function Contact() {
     </a>
 
 </div>
-
-    return <Page content={content} name="Contact" />
+    // Other color: #FCF6F5FF
+    return <Page content={content} name="Contact" backgroundColor="#2BAE66FF"/>
 }

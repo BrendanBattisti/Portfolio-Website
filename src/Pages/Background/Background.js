@@ -77,7 +77,7 @@ export default function Background() {
 
   window.addEventListener("scroll", function () {
     const pos = window.scrollY;
-    if (pos < 300) {
+    if (pos < 600) {
       setScroll(window.scrollY);
     }
   });

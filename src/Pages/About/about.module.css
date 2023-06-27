@@ -1,0 +1,22 @@
+h1 {
+  padding-top: 7%;
+  color: #fffefe;
+}
+
+h2 {
+  font-size: 20px;
+  color: #fffefe;
+  width: 60%;
+}
+
+.ritImage {
+  border-radius: 50%;
+  width: 25%;
+  height: auto;
+}
+
+.ritRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

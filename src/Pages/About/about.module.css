@@ -1,3 +1,7 @@
+.container {
+  position: relative;
+}
+
 h1 {
   padding-top: 7%;
   color: #fffefe;
@@ -13,6 +17,7 @@ h2 {
   border-radius: 50%;
   width: 25%;
   height: auto;
+  position: relative;
 }
 
 .ritRow {

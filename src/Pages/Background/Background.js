@@ -77,7 +77,7 @@ export default function Background() {
 
   window.addEventListener("scroll", function () {
     const pos = window.scrollY;
-    if (pos < 600) {
+    if (pos < 600 && scroll !== pos) {
       setScroll(window.scrollY);
     }
   });
@@ -88,6 +88,7 @@ export default function Background() {
         key={`Image${index}`}
         src={image[0]}
         style={{ top: image[1](scroll), left: image[2](scroll) }}
+        alt=""
       />
     );
   }

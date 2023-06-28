@@ -18,23 +18,32 @@ export default function About() {
   });
 
   const nameStyle = {
-    opacity: (-1 / 200) * (scroll - 450),
-    left: Math.min(-0.5 * Math.max(scroll - 200, 0), 0),
+    opacity: (-1 / 200) * (scroll - 550),
+    left: Math.min(-0.5 * Math.max(scroll - 250, 0), 0),
   };
 
   const schoolStyle = {
     opacity: (-1 / 200) * (scroll - 300),
-    left: Math.min(-0.5 * Math.max(scroll - 50, 0), 0),
+    left: Math.min(-0.5 * Math.max(scroll - 150, 0), 0),
   };
 
   const logoStyle = {
     opacity: (-1 / 200) * (scroll - 300),
-    right: Math.min(-0.5 * Math.max(scroll - 50, 0), 0),
+    right: Math.min(-0.5 * Math.max(scroll - 75, 0), 0),
   };
 
   const passionStyle = {
     opacity: (-1 / 200) * (scroll - 200),
     left: Math.min(-0.5 * Math.max(scroll, 0), 0),
+  };
+
+  const passion2Style = {
+    opacity: (-1 / 200) * (scroll - 150),
+    left: Math.min(-0.5 * Math.max(scroll + 75, 0), 0),
+  };
+  const passion3Style = {
+    opacity: (-1 / 200) * (scroll - 100),
+    left: Math.min(-0.5 * Math.max(scroll + 150, 0), 0),
   };
 
   const content = (
@@ -48,9 +57,14 @@ export default function About() {
         <img src={rit} className={styles.ritImage} style={logoStyle} />
       </div>
       <h2 style={passionStyle}>
-        I have always been passionate about doing interesting technical
-        projects, whether it was automating doing my German homework in middle
-        school, or building a virtual assistant to automate tasks in my home.
+        I have been passionate about doing interesting technical projects for as
+        long as I can remember.
+      </h2>
+      <h2 style={passion2Style}>
+        Whether it was automating doing my German homework in middle school
+      </h2>
+      <h2 style={passion2Style}>
+        or building a virtual assistant to automate tasks in my home
       </h2>
     </div>
   );

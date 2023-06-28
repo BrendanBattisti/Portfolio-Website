@@ -14,7 +14,7 @@ header {
 }
 
 .title {
-  font-size: 30px;
+  font-size: 3vh;
   display: inline-block;
   position: relative;
   cursor: default;
@@ -47,7 +47,7 @@ a {
   display: flex;
   justify-content: right;
   align-items: center;
-  font-size: 25px;
+  font-size: 3vh;
   flex-direction: row;
 }
 

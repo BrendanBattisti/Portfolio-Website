@@ -47,7 +47,7 @@ export default function About() {
 
   const content = (
     <div ref={refRef} className={styles.container}>
-      <h1 style={nameStyle}>My name is Brendan Battisti</h1>
+      <h2 style={nameStyle}>My name is Brendan Battisti</h2>
       <div className={styles.ritRow}>
         <h2 style={schoolStyle}>
           I'm a third year computer science student at the Rochester Insitute of

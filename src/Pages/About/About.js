@@ -17,7 +17,7 @@ export default function About() {
   });
 
   const nameStyle = {
-    opacity: (-1 / 200) * (scroll - 550),
+    opacity: (-1 / 200) * (scroll - 450),
     left: Math.min(-0.5 * Math.max(scroll - 250, 0), 0),
   };
 

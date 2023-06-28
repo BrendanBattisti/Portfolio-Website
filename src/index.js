@@ -13,11 +13,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Background />
-
     <Top />
     <About />
-    <Experience />
-    <Projects />
     <Contact />
   </React.StrictMode>
 );

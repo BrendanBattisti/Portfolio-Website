@@ -61,7 +61,7 @@ export default function About() {
         long as I can remember.
       </h2>
       <h2 style={passion2Style}>
-        Whether it was automating doing my German homework in middle school
+        Whether it was automating my German homework in middle school
       </h2>
       <h2 style={passion2Style}>
         or building a virtual assistant to automate tasks in my home

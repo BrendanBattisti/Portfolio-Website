@@ -11,7 +11,7 @@ export default function Contact() {
   window.addEventListener("scroll", () => {
     if (refRef.current != null) {
       const pos = refRef.current.getBoundingClientRect().top;
-      if (pos < 500) {
+      if (pos < 500 && pos !== scroll) {
         setScroll(pos);
       }
     }

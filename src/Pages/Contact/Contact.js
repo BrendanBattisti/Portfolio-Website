@@ -43,14 +43,14 @@ export default function Contact() {
           target="_blank"
           style={githubStyle}
         >
-          <img src={github} />
+          <img className={styles.contactImg} src={github} alt="Github" />
         </a>
         <a
           href="https://www.linkedin.com/in/brendan-battisti-0a548785/"
           target="_blank"
           style={linkedInStlye}
         >
-          <img src={linkedIn} />
+          <img className={styles.contactImg} src={linkedIn} alt="LinkedIn" />
         </a>
       </div>
     </div>

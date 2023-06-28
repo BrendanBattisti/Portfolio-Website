@@ -37,8 +37,9 @@ const projectData = [
 
 const projectImages = require.context("../../img/Projects/", true);
 
-export const ProjectsData = projectData.map((data) => {
+export const ProjectsData = projectData.map((data, index) => {
   const new_data = data;
+  new_data.key = `Project${index}`;
   new_data.image = projectImages(`./${data.image}`);
   return new_data;
 });

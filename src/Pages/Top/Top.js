@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 export default function Top() {
   const [name_text, setNameText] = useState("");
   const [activeLink, setActiveLink] = useState(-1);
-  const linksList = ["About", "Contact"];
+  const linksList = ["About", "Projects", "Contact"];
 
   function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));

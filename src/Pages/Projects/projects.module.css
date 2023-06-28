@@ -1,5 +1,5 @@
 .container {
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -8,7 +8,31 @@
   color: #adefd1ff;
 }
 
-.projectContainer {
-  width: 25%;
-  height: 15%;
+.projectHeader {
+  text-align: center;
+  width: 100%;
+}
+
+.previewContainer {
+  width: 15vw;
+  height: 40vh;
+  margin: 3%;
+  background-color: black;
+}
+
+.imageContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  height: 100%;
+}
+
+.projectImg {
+  width: 100%;
+}
+.previewText {
+  z-index: 2;
 }

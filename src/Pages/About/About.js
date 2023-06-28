@@ -13,7 +13,6 @@ export default function About() {
       if (pos < 500 && scroll !== pos) {
         setScroll(pos);
       }
-      console.log(pos);
     }
   });
 

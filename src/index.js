@@ -6,7 +6,6 @@ import Top from "./Pages/Top/Top.js";
 import Background from "./Pages/Background/Background";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
-import Experience from "./Pages/Experience/Experience";
 import Projects from "./Pages/Projects/Projects";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -15,6 +14,7 @@ root.render(
     <Background />
     <Top />
     <About />
+    <Projects />
     <Contact />
   </React.StrictMode>
 );

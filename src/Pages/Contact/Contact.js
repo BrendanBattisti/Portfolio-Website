@@ -6,7 +6,7 @@ import { useRef, useState } from "react";
 export default function Contact() {
   const refRef = useRef(null);
 
-  const [scroll, setScroll] = useState(0);
+  const [scroll, setScroll] = useState(1000);
 
   window.addEventListener("scroll", () => {
     if (refRef.current != null) {

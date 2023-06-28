@@ -16,8 +16,6 @@ root.render(
 
     <Top />
     <About />
-    <Experience />
-    <Projects />
     <Contact />
   </React.StrictMode>
 );

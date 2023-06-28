@@ -1,16 +1,19 @@
 .container {
-  position: relative;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 h1 {
   padding-top: 7%;
   color: #fffefe;
+  position: relative;
 }
 
 h2 {
   font-size: 20px;
   color: #fffefe;
   width: 60%;
+  position: relative;
 }
 
 .ritImage {

@@ -1,4 +1,14 @@
 [
-  { "name": "Fusion Upgrade", "link": "fusionupgrade.shop" },
-  { "name": "Andrew Kemler", "link": "andrewkemler.com" }
+  { 
+    "name": "Fusion Upgrade", 
+    "link": "fusionupgrade.shop",
+    "description": "Full-stack Ruby on Rails application for a business that buys and sells used phones. Features inventory management, pricing tools, and customer transaction processing.",
+    "technologies": ["Ruby on Rails", "PostgreSQL", "Tailwind CSS", "JavaScript"]
+  },
+  { 
+    "name": "Andrew Kemler", 
+    "link": "andrewkemler.com",
+    "description": "Professional website for a life insurance agent featuring client testimonials, policy information, and contact forms for insurance consultations.",
+    "technologies": ["React", "Tailwind CSS"]
+  }
 ]

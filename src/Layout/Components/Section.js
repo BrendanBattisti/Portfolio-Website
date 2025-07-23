@@ -1,8 +1,9 @@
-const Section = ({ id, children }) => {
+const Section = ({ id, children, className = "" }) => {
   return (
-    <div id={id} className="w-3/5 mx-auto h-screen">
+    <section id={id} className={`min-h-screen flex items-center ${className}`}>
       {children}
-    </div>
+    </section>
   );
 };
+
 export default Section;

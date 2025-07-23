@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/Portfolio-Website/static/css/main.2370440d.css",
-    "main.js": "/Portfolio-Website/static/js/main.b4061e67.js",
+    "main.css": "/Portfolio-Website/static/css/main.1b780327.css",
+    "main.js": "/Portfolio-Website/static/js/main.db05eb46.js",
     "static/js/787.749b4a44.chunk.js": "/Portfolio-Website/static/js/787.749b4a44.chunk.js",
-    "static/media/middle.png": "/Portfolio-Website/static/media/middle.182e52f5c2af314f9d5d.png",
-    "static/media/back.png": "/Portfolio-Website/static/media/back.d2787539b79d4d541567.png",
-    "static/media/front.png": "/Portfolio-Website/static/media/front.c35aa9ac59c7083010f3.png",
-    "static/media/RIT.jpg": "/Portfolio-Website/static/media/RIT.762e6cb7de4da8c16e97.jpg",
-    "static/media/water.png": "/Portfolio-Website/static/media/water.755fd36581d0153f669a.png",
-    "static/media/stars.png": "/Portfolio-Website/static/media/stars.1b59a0df4d0152a5efcd.png",
-    "static/media/moon.png": "/Portfolio-Website/static/media/moon.a8cd1260c8ada308ebf0.png",
     "index.html": "/Portfolio-Website/index.html",
-    "main.2370440d.css.map": "/Portfolio-Website/static/css/main.2370440d.css.map",
-    "main.b4061e67.js.map": "/Portfolio-Website/static/js/main.b4061e67.js.map",
+    "main.1b780327.css.map": "/Portfolio-Website/static/css/main.1b780327.css.map",
+    "main.db05eb46.js.map": "/Portfolio-Website/static/js/main.db05eb46.js.map",
     "787.749b4a44.chunk.js.map": "/Portfolio-Website/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2370440d.css",
-    "static/js/main.b4061e67.js"
+    "static/css/main.1b780327.css",
+    "static/js/main.db05eb46.js"
   ]
 }

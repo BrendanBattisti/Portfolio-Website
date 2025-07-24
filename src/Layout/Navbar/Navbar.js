@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,6 +19,19 @@ const Navbar = () => {
     }
   };
 
+  const Sections = ["About", "Portfolio", "Experience"];
+
+  function NavBarLink(text) {
+    return (
+      <button
+        onClick={() => scrollToSection(text.toLowerCase())}
+        className="text-subtext hover:text-primary-300 px-3 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:bg-primary-500/10"
+      >
+        {text}
+      </button>
+    );
+  }
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -35,31 +48,14 @@ const Navbar = () => {
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-accent bg-clip-text text-transparent hover:from-primary-300 hover:to-accent/80 transition-all duration-300"
             >
-              BB
+              Brendan Battisti
             </button>
           </div>
 
           {/* Navigation Links */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <button
-                onClick={() => scrollToSection("about")}
-                className="text-subtext hover:text-primary-300 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 hover:bg-primary-500/10"
-              >
-                About
-              </button>
-              <button
-                onClick={() => scrollToSection("portfolio")}
-                className="text-subtext hover:text-primary-300 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 hover:bg-primary-500/10"
-              >
-                Portfolio
-              </button>
-              <button
-                onClick={() => scrollToSection("experience")}
-                className="text-subtext hover:text-primary-300 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 hover:bg-primary-500/10"
-              >
-                Experience
-              </button>
+              {Sections.map((text) => NavBarLink(text))}
             </div>
           </div>
 

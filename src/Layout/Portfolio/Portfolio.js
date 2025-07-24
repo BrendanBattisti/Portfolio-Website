@@ -29,26 +29,6 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-
-        {/* Call to action */}
-        <div
-          className="text-center mt-16 animate-fade-in"
-          style={{ animationDelay: "0.6s" }}
-        >
-          <p className="text-subtext mb-6">
-            Interested in working together? Let's discuss your next project.
-          </p>
-          <button
-            onClick={() =>
-              document
-                .getElementById("experience")
-                .scrollIntoView({ behavior: "smooth" })
-            }
-            className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-primary-500/25"
-          >
-            View Experience
-          </button>
-        </div>
       </div>
     </Section>
   );

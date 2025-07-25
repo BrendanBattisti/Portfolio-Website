@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import About from "./Layout/About/About";
+import Contact from "./Layout/Contact/Contact";
 import Experience from "./Layout/Experience/Experience";
 import Hero from "./Layout/Hero/Hero";
 import Navbar from "./Layout/Navbar/Navbar";
@@ -15,6 +16,7 @@ root.render(
     <About />
     <Portfolio />
     <Experience />
+    <Contact />
   </React.StrictMode>
 );
 

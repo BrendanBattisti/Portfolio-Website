@@ -4,6 +4,7 @@ const Project = (data) => {
     const icons = {
       "Fusion Upgrade": "📱",
       "Andrew Kemler": "🛡️",
+      "Carmichael's Elite Mobile Detailing": "🚗",
     };
     return icons[name] || "🚀";
   };
